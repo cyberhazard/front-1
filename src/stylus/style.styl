@@ -1,0 +1,267 @@
+@import './_fonts.styl'
+
+*
+  margin 0
+  padding 0
+  box-sizing border-box
+  text-decoration none
+  list-style-type none
+  outline none
+
+#wrapper
+  width 100%
+  display flex
+
+body
+  overflow hidden
+
+.sidebar
+  background-color #0F0F0F
+  display flex
+  flex-direction column
+  flex-shrink 0
+  min-width: 250px
+  align-items center
+  height 100vh
+  width 414px
+  overflow auto
+  &__logo
+    margin 50px 0 40px
+
+.search
+  width 100%
+  height 44px
+  position relative
+  padding-left 22px
+  &__input
+    width 100%
+    height 100%
+    font-family "Andale Mono"
+    background-color transparent
+    border none
+    border-bottom 4px solid #242424
+    color white
+    font-size 28px
+    padding-left 60px
+  &__image
+    position absolute
+    top 0
+    left 36px
+
+.menu
+  text-align center
+  text-transform uppercase
+  &__submenu
+    margin 32px 0 56px
+  &__item
+    font-family "Avenir Next"
+    font-size 24px
+    font-weight 700
+    margin 30px 0
+    color #3c3c3c
+    cursor pointer
+    position relative
+    &_selected
+      color white
+      & span
+        position relative
+        &:after
+          content '\f078';
+          position absolute
+          top 8px
+          right -18px
+          font-family: FontAwesome
+          font-size: 12px
+  &__subitem
+    margin 24px 0
+  &__link
+    font-family "Andale Mono"
+    font-size 24px
+    font-weight 400
+    color #3c3c3c
+    &_active
+      color white
+
+.content
+  flex-grow 2
+  //padding 12px
+  height 100vh
+  overflow: auto
+  //
+  // display flex
+  // flex-direction: column
+  // justify-content: space-between
+  //
+.filter
+  padding 0 12px
+  margin 24px 0
+  display flex
+  align-items: center
+  &__image
+    margin-right 30px
+  &__text
+    font-family "Avenir Next"
+    font-size 24px
+    font-weight 700
+    text-transform uppercase
+    color #d6d6d6
+    border none
+    background-color transparent
+    margin 0 4px
+    cursor pointer
+    &_selected
+      color: #4d42f8;
+  &__title
+    margin: 0 12px 0 72px
+
+.products
+  display flex
+  flex-wrap: wrap
+
+.product-card
+  // width calc(33% - 24px)
+  min-width 310px
+  flex-shrink: 0
+  flex-grow: 2
+  border 8px solid #F3F3F3
+  position relative
+  margin 10px 12px
+  text-align center
+  &__sale
+    position absolute
+    top 6px
+    right 8px
+    padding 6px 20px
+    color #ffffff
+    font-family "Avenir Next"
+    font-size 14px
+    font-weight 700
+    text-transform uppercase
+    background-color #FF5C5C
+  &__photo
+    max-height 192px
+  &__link
+    display block
+    text-align center
+    padding 26px 0
+    width 100%
+    border-top: 12px solid #F3F3F3
+    color: #ffffff
+    background-image: linear-gradient(135deg, #0c09bf 0%, #966dd8 100%)
+    font-family: "Avenir Next"
+    font-size: 30px
+    font-weight: 700
+    &_sale
+      background-image none
+      color: black
+.order
+  width 100%
+  height 100%
+  min-width 1000px
+  display flex
+  flex-direction: column
+  justify-content: space-between
+  position relative
+  &__details-top
+    position relative
+    text-align center
+    padding-top 30px
+  &__wrapper
+    flex-grow: 2
+    overflow auto
+    padding 16px 28px 0
+  &__title
+    position absolute
+    top 12px
+    left 28px
+    color #3a3a3a
+    width 400px
+    font-family "Avenir Next"
+    font-size 64px
+    font-weight 700
+    text-transform uppercase
+    text-align left
+  &__save
+    position absolute
+    top 100%
+    left 0
+  &__button
+    flex-shrink 0
+    color #ffffff
+    padding 36px 0
+    cursor pointer
+    font-family "Avenir Next"
+    font-size 32px
+    font-weight 700
+    text-transform uppercase
+    background-image linear-gradient(to right, #4949aa 0%, #27275d 100%)
+    border none
+  &__sale
+    position absolute
+    top 36px
+    right 38px
+    color #ffffff
+    font-family "Avenir Next"
+    font-size 14px
+    font-weight 700
+    text-transform uppercase
+    padding 6px 20px
+    background-color #FF5C5C
+  &__price
+    position absolute
+    top calc(100% + 20px)
+    right 0
+    color #e2e2e2
+    font-family "Avenir Next"
+    font-size 80px
+    font-weight 700
+  &__big-image
+    height 460px
+  &__description
+    font-family "Avenir Next"
+    font-size 33px
+    font-weight 500
+    line-height 50px
+    color: #d8d8d8;
+    &_bold
+      color: #6e6e6e;
+
+.previews
+  display flex
+  margin-bottom 30px
+  &__item
+    border 4px solid transparent
+    height 130px
+    cursor pointer
+    &_selected
+      border-color #E9E9EB
+  &__show-more
+    height 130px
+    width 160px
+    text-align center
+    line-height 130px
+    color #c0c0c0
+    font-family ". Apple System UI Font"
+    font-size 14px
+    font-weight 400
+
+.colors
+  position absolute
+  top 7px
+  right calc(100% + 30px)
+  display flex
+  &__item
+    border-radius 50%
+    width 18px
+    height 18px
+    margin 0 6px
+    border none
+    cursor pointer
+    &_gray
+      background-color #C5C5C5
+    &_blue
+      background-color #4C88CB
+    &_black
+      background-color #494949
+    &_white
+      background-color #E1E1E1

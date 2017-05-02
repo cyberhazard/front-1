@@ -1,0 +1,33 @@
+extends _template.pug
+include _product-card
+
+block title
+  title Main Page
+
+block content
+  .filter
+    img.filter__image(src="/img/filter.png")
+    button.filter__text.filter__text_selected Man
+    button.filter__text Woman
+    .filter__title.filter__text.filter__text_selected Size
+    button.filter__text 36
+    button.filter__text 37
+    button.filter__text 38
+    button.filter__text 39
+    button.filter__text 40
+    button.filter__text.filter__text_selected 41
+    button.filter__text 42
+  .products
+    +productCard('/img/prod-1.png','$170',true)
+    +productCard('/img/prod-2.png','$230',true)
+    +productCard('/img/prod-2.png','$230',false)
+    +productCard('/img/prod-3.png','$190',true)
+    +productCard('/img/prod-3.png','$190',false)
+    +productCard('/img/prod-1.png','$170',true)
+    +productCard('/img/prod-3.png','$190',true)
+    +productCard('/img/prod-1.png','$170',false)
+    +productCard('/img/prod-2.png','$230',true)
+    +productCard('/img/prod-1.png','$170',false)
+    +productCard('/img/prod-2.png','$230',true)
+    +productCard('/img/prod-2.png','$230',true)
+    +productCard('/img/prod-1.png','$170',false)
