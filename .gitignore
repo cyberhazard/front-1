@@ -1,7 +1,3 @@
 node_modules
 .DS_Store
-dest/main.html
-dest/index.html
-dest/details.html
-dest/img
-dest/css
+dest

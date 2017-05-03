@@ -23,10 +23,15 @@ gulp.task('img', () =>
     .pipe(imagemin())
     .pipe(gulp.dest('./dest/img')))
 
+gulp.task('fonts', () => {
+  gulp.src('./src/fonts/**/*.**')
+    .pipe(gulp.dest('./dest/fonts/'));
+});
+
 gulp.task('watch', () => {
   watch('./src/pug/**/*.pug', _=>gulp.start('pug'))
   watch('./src/stylus/**/*.styl', _=>gulp.start('stylus'))
   watch('./src/images/**/*.*', _=>gulp.start('img'))
 })
 
-gulp.task('default', ['pug', 'stylus', 'img', 'watch'])
+gulp.task('default', ['pug', 'stylus', 'img', 'fonts', 'watch'])
