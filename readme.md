@@ -2,7 +2,7 @@
 > npm install
 
 Запуск:
-> npm run de
+> npm run dev
 
 Поправить:
 
