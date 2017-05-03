@@ -18,11 +18,11 @@ block content
         h2.order__price 170$
       img.order__big-image(src="/img/big-image.png")
     .previews
-      img.previews__item(src="/img/preview-1.png")
-      img.previews__item(src="/img/preview-2.png")
-      img.previews__item(src="/img/preview-3.png")
-      img.previews__item.previews__item_selected(src="/img/preview-1.png")
-      img.previews__item(src="/img/preview-2.png")
+      button.previews__item: img(src="/img/preview-1.png")
+      button.previews__item: img(src="/img/preview-2.png")
+      button.previews__item: img(src="/img/preview-3.png")
+      button.previews__item.previews__item_selected: img(src="/img/preview-1.png")
+      button.previews__item: img(src="/img/preview-2.png")
       .previews__show-more Show more photos
     p.order__description #[span.order__description_bold Adidas] is a German multinational corporation, headquartered in Herzogenaurach, Germany, that designs and manufactures shoes, clothing and accessories.
   button.order__button Buy Now
