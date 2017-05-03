@@ -14,16 +14,16 @@ html(lang="ru")
         .search
           img.search__image(src="/img/search.svg")
           input.search__input
-        ul.menu
-          li.menu__item.menu__item_selected
+        nav.menu
+          .menu__item.menu__item_selected
             span Sports
-            ul.menu__submenu
-              li.menu__subitem: a.menu__link.menu__link_active(href="#") Shoes
-              li.menu__subitem: a.menu__link(href="#") Clothing
-              li.menu__subitem: a.menu__link(href="#") Accesories
-          li.menu__item
+            nav.menu__submenu
+              .menu__subitem: a.menu__link.menu__link_active(href="#") Shoes
+              .menu__subitem: a.menu__link(href="#") Clothing
+              .menu__subitem: a.menu__link(href="#") Accesories
+          .menu__item
             span Brands
-          li.menu__item
+          .menu__item
             span Micoach
       .content
         block content
