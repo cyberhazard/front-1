@@ -169,11 +169,16 @@ body
   flex-grow: 2
   overflow auto
   padding 0 28px
-  &__top-left
-    position absolute
-    top 12px
-    left 28px
-    text-align left
+  &__top
+    &-left
+      position absolute
+      top 12px
+      left 28px
+      text-align left
+    &-right
+      position absolute
+      top 36px
+      right 38px
   &__details-top
     position relative
     text-align center
@@ -209,9 +214,6 @@ body
     background-image linear-gradient(to right, #4949aa 0%, #27275d 100%)
     border none
   &__sale
-    position absolute
-    top 36px
-    right 38px
     color #ffffff
     font-family "Avenir Next"
     font-size 14px
