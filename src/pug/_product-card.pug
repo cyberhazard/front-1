@@ -1,6 +1,6 @@
 mixin productCard(img,price,sale)
   .product-card
         if(sale)
-          .product-card__sale Sale
+          span.product-card__sale Sale
         img.product-card__photo(src=img)
         a.product-card__link(href="#" class=sale? null : "product-card__link_sale")= price
