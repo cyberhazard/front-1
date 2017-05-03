@@ -168,14 +168,16 @@ body
   flex-grow: 2
   overflow auto
   padding 0 28px
+  &__top-left
+    position absolute
+    top 12px
+    left 28px
+    text-align left
   &__details-top
     position relative
     text-align center
     padding-top 30px
   &__title
-    position absolute
-    top 12px
-    left 28px
     color #3a3a3a
     width 400px
     font-family "Avenir Next"
@@ -184,9 +186,16 @@ body
     text-transform uppercase
     text-align left
   &__save
-    position absolute
-    top 100%
-    left 0
+    width 75px
+    height 75px
+    border none
+    border-radius 50%
+    background-color #E4E4E4
+    color #ffffff
+    font-family "Avenir Next"
+    font-size 18px
+    font-weight 700
+    text-transform uppercase
   &__button
     flex-shrink 0
     color #ffffff
