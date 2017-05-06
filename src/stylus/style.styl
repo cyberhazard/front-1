@@ -98,7 +98,7 @@ body
   display flex
   flex-direction: column
   justify-content: space-between
-  min-width 1000px
+  //min-width 1000px
   //
 .filter
   padding 0 12px
@@ -126,17 +126,12 @@ body
     margin: 0 12px 0 72px
 
 .products
-  display flex
-  flex-wrap: wrap
+  padding 12px
 
 .product-card
-  width calc((100% / 4) - 24px)
-  min-width 310px
-  flex-shrink: 0
-  flex-grow: 0
   border 8px solid productCardBorderColor
   position relative
-  margin 10px 12px
+  //margin 10px 12px
   text-align center
   &__sale
     position absolute
@@ -283,3 +278,4 @@ body
       background-color #E1E1E1
 
 @import './_media.styl'
+@import './_grid.styl'
