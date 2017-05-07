@@ -11,12 +11,13 @@ block content
         h1.order__title Ultra boost
         button.order__save Save
       .order__top-right
-        span.order__sale Sale
-        .colors
-          button.colors__item.colors__item_gray
-          button.colors__item.colors__item_blue
-          button.colors__item.colors__item_black
-          button.colors__item.colors__item_white
+        section.order__sale-wrap
+          span.order__sale Sale
+          .colors
+            button.colors__item.colors__item_gray
+            button.colors__item.colors__item_blue
+            button.colors__item.colors__item_black
+            button.colors__item.colors__item_white
         h2.order__price 170$
       img.order__big-image(src="/img/big-image.png")
     .previews
@@ -25,6 +26,6 @@ block content
       button.previews__item: img(src="/img/preview-3.png")
       button.previews__item.previews__item_selected: img(src="/img/preview-1.png")
       button.previews__item: img(src="/img/preview-2.png")
-      .previews__show-more Show more photos
+      .previews__item.previews__show-more Show more photos
     p.order__description #[span.order__description_bold Adidas] is a German multinational corporation, headquartered in Herzogenaurach, Germany, that designs and manufactures shoes, clothing and accessories.
   button.order__button Buy Now

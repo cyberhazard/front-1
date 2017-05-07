@@ -1,3 +1,64 @@
 @media (max-width: 1435px)
   .sidebar
     width 200px
+@media (max-width: 970px)
+  #wrapper
+    padding-top 64px
+  .sidebar
+    position: fixed
+    top 0
+    left 0
+    width 100%
+    height 64px
+    overflow hidden
+    flex-direction: row
+    padding 12px
+    &__logo
+      height 30px
+  .search, .menu
+    display none
+  .content
+    padding-top 15px
+    height calc(100vh - 64px)
+  .filter
+    display block
+    margin 0
+    &__title
+      margin 0 4px
+    &__image
+      display none
+  .order
+    &__big-image
+      width 100%
+      max-height: none
+    &__top-left
+      position static
+    &__top-right
+      position static
+      display flex
+      flex-direction column
+      align-items flex-start
+    &__save
+      display none
+    &__title
+      font-size 36px
+      width 100%
+    &__price, &__sale, .colors
+      position static
+    &__price
+      order -1
+    &__sale-wrap
+      display flex
+      width 100%
+      justify-content: space-between
+    &__description
+      font-size 20px
+      line-height 1.2
+  .previews
+    display flex
+    flex-wrap: wrap
+    &__show-more
+      width 62px
+      line-height normal
+    &__item img, &__show-more
+      height 50px
